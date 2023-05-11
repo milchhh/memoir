@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>memoir</title>
+  </head>
+  <body>
+    <main>
+      <div class="contentBox">
+        <div class="logIn-text">Log in</div>
+        <div class="logIn-container">
+          <div>
+            <button>
+              <img
+                src="assets/google-logo.svg"
+                alt="image"
+                style="height: 14px; margin-right: 6px"
+              />
+              Continue with Google
+            </button>
+            <button>
+              <img
+                src="assets/apple-logo.svg"
+                alt="image"
+                style="height: 16px; margin-right: 4px"
+              />
+              Continue with Apple
+            </button>
+          </div>
+          <div class="separator-container">
+            <div class="separator"></div>
+          </div>
+          <div>
+            <form>
+              <label for="memoir-input-1">Email</label>
+              <input
+                id="memoir-input-1"
+                type="text"
+                placeholder="Enter your email address..."
+              />
+            </form>
+            <button id="continueBut">Continue with email</button>
+            <div style="margin-top: 8px; text-align: center">
+              <a href="#">Forgot password?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<script src="https://accounts.google.com/gsi/client" async defer></script>
