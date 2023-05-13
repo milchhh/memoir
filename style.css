@@ -107,4 +107,5 @@ a {
 #continueBut {
   color: rgb(235, 87, 87);
   background-color: rgb(253, 245, 242);
+  cursor: pointer;
 }

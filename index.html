@@ -35,15 +35,19 @@
             <div class="separator"></div>
           </div>
           <div>
-            <form>
+            <form onsubmit="sendLoginCode(); return false;">
               <label for="memoir-input-1">Email</label>
               <input
                 id="memoir-input-1"
                 type="text"
                 placeholder="Enter your email address..."
               />
+              <input
+                id="continueBut"
+                type="submit"
+                value="Continue with email"
+              />
             </form>
-            <button id="continueBut">Continue with email</button>
             <div style="margin-top: 8px; text-align: center">
               <a href="#">Forgot password?</a>
             </div>
@@ -54,4 +58,15 @@
   </body>
 </html>
 
-<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("DD2BioEbu2Axf330_");
+  })();
+</script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script src="index.js"></script>
